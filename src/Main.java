@@ -15,7 +15,7 @@ public class Main {
 
     public static String askForItem(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Type in item: ");
+        Out.Input();
         return scanner.nextLine();
     }
 
