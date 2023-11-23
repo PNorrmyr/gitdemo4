@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        addItem();
+
+
+    }
+
+    public static String askForItem(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Type in item: ");
+        String response = scanner.nextLine();
+        return response;
+    }
+
+    public static void addItem() {
+        List<String> shoppingList = new ArrayList<>();
+        String item = "";
+
+        while (!item.equalsIgnoreCase("done")) {
+            item = askForItem();
+            shoppingList.add(item);
+
+            if (shoppingList.size() == 10) {
+                item = "done";
+            }
+        }
+        System.out.println(shoppingList);
+    }
+
+}
