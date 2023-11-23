@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Welcome to shoppinglist!");
-
+        System.out.println("Your items will be added to shoppinglist");
         addItem();
 
 
